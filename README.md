@@ -1,13 +1,13 @@
-🛰️ ESP32 Learning Path
+# ESP32 Learning Path
 Este repositório centraliza meus estudos e atividades práticas desenvolvidas com o microcontrolador ESP32. O foco principal é consolidar conhecimentos em hardware e sistemas embarcados, essenciais para o desenvolvimento de sistemas de controle e projetos aeroespaciais, como CubeSats.
 
-🛠️ Tecnologias e Ferramentas
+## Tecnologias e Ferramentas
 Linguagens: C/C++.
 
-Frameworks: ESP-IDF 
+## Frameworks: ESP-IDF 
 Protocolos: UART, I2C, SPI e conectividade sem fio.
 
-📚 Trajetória Acadêmica e Disciplinas
+## Trajetória Acadêmica e Disciplinas
 Este repositório documenta a evolução técnica através de disciplinas e treinamentos vinculados ao Departamento de Engenharia Elétrica (DEE) e ao Programa de Pós-Graduação em Engenharia Mecatrônica (PPGEM) da UFRN:
 
 1. Treinamento Interno - Grupo de Pesquisa em Hardware (GPH)
@@ -25,5 +25,5 @@ Docente: Profª. Dra. Samaherni Morais Dias (DEE/UFRN).
 
 Foco: Implementação de algoritmos de controle e automação em hardware dedicado.
 
-🎯 Objetivos de Aprendizado
+## Objetivos de Aprendizado
 Como estudante de Engenharia Mecatrônica na UFRN, utilizo estes projetos para aprofundar minha experiência com microcontroladores e arquiteturas computacionais, visando futuras aplicações em sistemas de controle críticos.
