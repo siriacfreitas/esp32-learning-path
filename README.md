@@ -21,7 +21,7 @@ Docente: Prof. Dr. Antonio Wallace Antunes Soares (DEE/UFRN).
 Foco: Arquiteturas avançadas e periféricos de microcontroladores.
 
 #### 3. EGM0029 - Sistemas Embarcados para Controle e Automação (2025.2)
-Docente: Profª. Dra. Samaherni Morais Dias (DEE/UFRN).
+Docente: Profª. Dr. Samaherni Morais Dias (DEE/UFRN).
 
 Foco: Implementação de algoritmos de controle e automação em hardware dedicado.
 
