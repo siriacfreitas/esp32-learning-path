@@ -16,7 +16,7 @@ Implemente um pequeno sistema com duas tarefas utilizando FreeRTOS:
 ## Resultados Observados
 Conforme demonstrado na imagem dos logs, o sistema apresenta um comportamento de transbordamento de fila (overflow).
 
-![width="200"](resultados_uart-1.png)
+<img src="resultados_uart-1.png" width="250">
 
 ## Análise Crítica:
 Saturação: Como a tarefa de leitura é 2x mais rápida (500ms) que a de escrita (1000ms), a fila de 10 posições atinge sua capacidade máxima rapidamente.
