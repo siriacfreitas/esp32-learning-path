@@ -2,7 +2,10 @@
 
 Este componente foi desenvolvido para facilitar o controle de LEDs RGB no ESP32 utilizando o periférico de hardware **LEDC (LED Control)**. Ele suporta o ajuste de cores através de Duty Cycle (PWM) e possui proteção nativa para ambientes **RTOS**.
 
-<img src="led_imag.png" width="250">
+<div align="center">
+  <img src="led_imag.png" width="350">
+</div>
+
 
 ## Funcionalidades
 
@@ -18,7 +21,6 @@ Este componente foi desenvolvido para facilitar o controle de LEDs RGB no ESP32 
 ### 1. Configuração e Inicialização
 Defina os pinos e canais que deseja utilizar na estrutura de configuração:
 
-```c
 led_rgb_config_t led_config = {
     .red_pin = RED_PIN_GPIO,
     .blue_pin = BLUE_PIN_GPIO,
@@ -34,15 +36,15 @@ led_rgb_config_t led_config = {
 
 led_rgb_handle_t led_handle;
 led_rgb_init(&led_handle, &led_config);
-c
+
 
 ### 2. Alterando Cores
 O comando set_color aceita valores baseados na resolução escolhida (ex: 0 a 255 para 8 bits).
 
-```c
+
 // Define cor Branca (Brilho máximo em todos os canais)
 led_rgb_set_color(&led_handle, 255, 255, 255);
 
 // Desliga o LED
 led_rgb_set_color(&led_handle, 0, 0, 0);
-c
+
