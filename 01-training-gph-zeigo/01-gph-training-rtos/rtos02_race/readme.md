@@ -2,7 +2,7 @@
 
 Este projeto explora o comportamento de múltiplas tarefas acessando um recurso compartilhado (uma variável global) sem mecanismos de sincronização. O objetivo é observar o fenômeno de **Condição de Corrida (Race Condition)**.
 
-## 📝 Enunciado do Desafio
+##  Enunciado do Desafio
 
 1. **Variável Global:** Criar uma variável global chamada `counter`.
 2. **Duas Tasks:** Ambas devem incrementar o mesmo contador e imprimir o resultado no log.
@@ -10,7 +10,7 @@ Este projeto explora o comportamento de múltiplas tarefas acessando um recurso 
 
 ---
 
-## 📊 Análise de Resultados
+##  Análise de Resultados
 
 Ao observar os logs de execução, nota-se que os valores podem apresentar comportamentos inesperados, como saltos ou repetições de números entre as tarefas `COUNT1` e `COUNT2`.
 
