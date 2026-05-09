@@ -13,7 +13,9 @@ Este projeto apresenta a solução para o problema de inconsistência de dados o
 ## Análise de Resultados
 
 Ao utilizar o Mutex, a seção crítica do código (o incremento da variável) torna-se atômica em relação às tarefas concorrentes.
-<img src="resultado_uart.png" width="250">
+<div align="center">
+  <img src="resultado_uart.png" width="350">
+</div>
 
 ### Respostas às Perguntas de Reflexão
 
