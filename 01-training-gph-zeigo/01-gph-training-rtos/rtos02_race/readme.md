@@ -10,7 +10,7 @@ Este projeto explora o comportamento de múltiplas tarefas acessando um recurso 
 
 ---
 
-##  Análise de Resultados
+## Análise de Resultados
 
 Ao observar os logs de execução, nota-se que os valores podem apresentar comportamentos inesperados, como saltos ou repetições de números entre as tarefas `COUNT1` e `COUNT2`.
 
@@ -36,6 +36,3 @@ Para garantir a integridade dos dados em sistemas reais, deve-se utilizar mecani
 *   **Semáforos:** Para sinalização entre tarefas.
 *   **Operações Atômicas:** Para incrementos simples e rápidos.
 
----
-**Desenvolvido por:** Siria  
-**Contexto:** Engenharia Mecatrônica - UFRN
