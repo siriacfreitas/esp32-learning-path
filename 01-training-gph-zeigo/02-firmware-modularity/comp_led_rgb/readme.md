@@ -2,7 +2,7 @@
 
 Este componente foi desenvolvido para facilitar o controle de LEDs RGB no ESP32 utilizando o periférico de hardware **LEDC (LED Control)**. Ele suporta o ajuste de cores através de Duty Cycle (PWM) e possui proteção nativa para ambientes **RTOS**.
 
-<img src="led_imag.png" width="250">
+<img src="led_imag.jpng" width="250">
 
 ## Funcionalidades
 
