@@ -14,7 +14,9 @@ Este projeto explora o comportamento de múltiplas tarefas acessando um recurso 
 
 Ao observar os logs de execução, nota-se que os valores podem apresentar comportamentos inesperados, como saltos ou repetições de números entre as tarefas `COUNT1` e `COUNT2`.
 
-<img src="resultados_uart.png" width="250">
+<div align="center">
+  <img src="resultados_uart.png" width="350">
+</div>
 
 ### Respostas às Perguntas de Reflexão
 #### 1. Os valores aparecem sempre em ordem?
