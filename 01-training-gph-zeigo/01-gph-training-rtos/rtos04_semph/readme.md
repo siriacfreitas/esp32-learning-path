@@ -6,8 +6,6 @@ Este projeto demonstra a implementação de sincronização entre tarefas utiliz
   <img src="resultado.png" width="350">
 </div>
 
-
-
 ## Descrição do Desafio
 
 O fluxo de execução foi estruturado da seguinte forma:
@@ -36,7 +34,7 @@ O fluxo de execução foi estruturado da seguinte forma:
 
 ---
 
-## 🛠️ Tecnologias e Conceitos Aplicados
+## Tecnologias e Conceitos Aplicados
 
 * **ESP-IDF v5.x**
 * **FreeRTOS Semaphores**: Implementação de semáforos binários para controle de fluxo.
