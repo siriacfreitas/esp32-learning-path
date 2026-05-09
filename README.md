@@ -11,7 +11,7 @@ Protocolos: UART, I2C, SPI e conectividade sem fio.
 Este repositório documenta a evolução técnica através de disciplinas e treinamentos vinculados ao Departamento de Engenharia Elétrica (DEE) e ao Programa de Pós-Graduação em Engenharia Mecatrônica (PPGEM) da UFRN:
 
 #### 1. Treinamento Interno - Grupo de Pesquisa em Hardware (GPH)
-Orientador: Prof. Dr. José Igo Soares Camilo (PPGEM/UFRN).
+Orientador: Prof. José Igo Soares Camilo (PPGEM/UFRN).
 
 Contexto: Desenvolvimento de firmware e hardware para projetos de pesquisa do grupo.
 
