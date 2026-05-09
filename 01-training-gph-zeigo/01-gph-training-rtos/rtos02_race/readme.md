@@ -13,6 +13,7 @@ Este projeto explora o comportamento de múltiplas tarefas acessando um recurso 
 ## 📊 Análise de Resultados
 
 Ao observar os logs de execução, nota-se que os valores podem apresentar comportamentos inesperados, como saltos ou repetições de números entre as tarefas `COUNT1` e `COUNT2`.
+
 <img src="resultados_uart.png" width="250">
 ### Respostas às Perguntas de Reflexão
 
