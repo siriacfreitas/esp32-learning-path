@@ -15,8 +15,8 @@ Este projeto explora o comportamento de múltiplas tarefas acessando um recurso 
 Ao observar os logs de execução, nota-se que os valores podem apresentar comportamentos inesperados, como saltos ou repetições de números entre as tarefas `COUNT1` e `COUNT2`.
 
 <img src="resultados_uart.png" width="250">
-### Respostas às Perguntas de Reflexão
 
+### Respostas às Perguntas de Reflexão
 #### 1. Os valores aparecem sempre em ordem?
 **Não necessariamente.** Embora as tarefas tenham a mesma prioridade e tempo de delay, o escalonador do FreeRTOS pode alternar entre elas em momentos distintos. Além disso, a operação de incremento e a operação de log não são atômicas, o que pode causar uma desordem visual ou lógica nos logs.
 
