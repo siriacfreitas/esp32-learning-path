@@ -2,6 +2,10 @@
 # Desafio 4: Sincronização com Semáforos no FreeRTOS
 
 Este projeto demonstra a implementação de sincronização entre tarefas utilizando **Semáforos** no ESP32. O objetivo é coordenar a execução de uma tarefa de processamento baseada em um evento gerado por uma tarefa de sensor, garantindo que o processamento só ocorra quando o dado estiver disponível.
+<div align="center">
+  <img src="resultado.png" width="350">
+</div>
+
 
 
 ## Descrição do Desafio
