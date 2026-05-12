@@ -26,9 +26,9 @@ Ao realizar a montagem, é crucial identificar se o seu LED é de Ânodo Comum o
 
 **Fonte:** [DIoT Labs - RGB LEDs](https://diotlabs.daraghbyrne.me/docs/leds-continued/rgb-leds/)
 
-Ânodo Comum (Common Anode): O pino comum deve ser conectado ao VCC (3.3V). Neste caso, o LED acende quando a saída do ESP32 está em nível LOW (ou duty cycle baixo).
+**Ânodo Comum (Common Anode)**: O pino comum deve ser conectado ao VCC (3.3V). Neste caso, o LED acende quando a saída do ESP32 está em nível LOW (ou duty cycle baixo).
 
-Cátodo Comum (Common Cathode): O pino comum deve ser conectado ao GND. O LED acende quando a saída está em nível HIGH (duty cycle alto).
+**Cátodo Comum (Common Cathode)**: O pino comum deve ser conectado ao GND. O LED acende quando a saída está em nível HIGH (duty cycle alto).
 
 ## Funcionalidades
 
