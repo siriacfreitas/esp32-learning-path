@@ -6,6 +6,29 @@ Este componente foi desenvolvido para facilitar o controle de LEDs RGB no ESP32 
   <img src="led_imag.png" width="350">
 </div>
 
+## Montagem do Hardware
+Para garantir o funcionamento correto do componente, a montagem física deve seguir o mapeamento de pinos definido no firmware. Abaixo, a representação do circuito utilizando resistores limitadores de corrente para proteger as saídas do ESP32.
+
+<div align="center">
+  <img src="circuito.png" width="350">
+  <p><i>Montagem do circuito no Wokwi.</i></p>
+</div>
+
+A imagem abaixo ilustra a conexão dos pinos Red, Green e Blue aos GPIOs correspondentes (23, 22 e 21), compartilhando um barramento comum.
+
+## Tipos de LED RGB: Ânodo Comum vs. Cátodo Comum
+Ao realizar a montagem, é crucial identificar se o seu LED é de Ânodo Comum ou Cátodo Comum, pois isso altera a conexão do pino mais longo (comum) e a lógica de acionamento:
+
+<div align="center">
+  <img src="leds.png" width="350">
+  <p><i>Esquemático de funcionamento interno e pinagem do LED RGB.</i></p>
+</div>
+
+**Fonte:** [DIoT Labs - RGB LEDs](https://diotlabs.daraghbyrne.me/docs/leds-continued/rgb-leds/)
+
+Ânodo Comum (Common Anode): O pino comum deve ser conectado ao VCC (3.3V). Neste caso, o LED acende quando a saída do ESP32 está em nível LOW (ou duty cycle baixo).
+
+Cátodo Comum (Common Cathode): O pino comum deve ser conectado ao GND. O LED acende quando a saída está em nível HIGH (duty cycle alto).
 
 ## Funcionalidades
 

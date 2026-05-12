@@ -18,7 +18,7 @@
 /**@{*/
 #define RED_PIN_GPIO   GPIO_NUM_23   /*!< GPIO para o canal vermelho */
 #define GREEN_PIN_GPIO GPIO_NUM_22   /*!< GPIO para o canal verde */
-#define BLUE_PIN_GPIO  GPIO_NUM_21   /*!< GPIO para o canal azul (Corrigido: evite duplicar o pino 22) */
+#define BLUE_PIN_GPIO  GPIO_NUM_21   /*!< GPIO para o canal azul */
 
 #define RED_LEDC_CHANNEL   LEDC_CHANNEL_0
 #define GREEN_LEDC_CHANNEL LEDC_CHANNEL_1
