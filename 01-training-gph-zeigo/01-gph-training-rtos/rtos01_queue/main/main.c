@@ -1,6 +1,6 @@
 /**
  * @file main.c
- * @author Seu Nome
+ * @author Síria Cabral
  * @brief Exemplo de comunicação entre tarefas usando Filas (Queues) no FreeRTOS.
  * @version 0.1
  * @date 2026-05-08
