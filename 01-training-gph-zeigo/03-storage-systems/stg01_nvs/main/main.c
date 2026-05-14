@@ -43,13 +43,13 @@ void app_main(void) {
     };
     /** @} */
 
-    arq_nvs_handler_t nvs_handler;
+    arq_nvs_handle_t nvs_handle;
 
     /**
      * @step 1: Inicialização do Driver.
      * Cuida da inicialização da partição flash e do semáforo de proteção.
      */
-    if (nvs_init(&nvs_handler, &nvs_config) != ESP_OK) {
+    if (arq_nvs_init(&nvs_handle, &nvs_config) != ESP_OK) {
         ESP_LOGE(TAG, "Erro fatal ao inicializar driver NVS");
         return;
     }
@@ -58,7 +58,7 @@ void app_main(void) {
      * @step 2: Leitura do estado de erro persistente.
      * Se a chave não existir, assume-se a primeira execução do sistema.
      */
-    esp_err_t err = nvs_read(&nvs_handler);
+    esp_err_t err = arq_nvs_read(&nvs_handle);
     if (err == ESP_ERR_NVS_NOT_FOUND) {
         ESP_LOGW(TAG, "Primeira execução: Contador não encontrado, iniciando em 0.");
         err_count = 0;
@@ -83,7 +83,7 @@ void app_main(void) {
      */
     err_count++;
     ESP_LOGI(TAG, "Incrementando contador para %d...", err_count);
-    nvs_write(&nvs_handler);
+    arq_nvs_write(&nvs_handle);
 
     /**
      * @step 5: Período de Teste de Estabilidade.
@@ -97,7 +97,7 @@ void app_main(void) {
      * Após 10s sem reinicializações, o contador é zerado na memória não volátil.
      */
     err_count = 0;
-    if (nvs_write(&nvs_handler) == ESP_OK) {
+    if (arq_nvs_write(&nvs_handle) == ESP_OK) {
         ESP_LOGI(TAG, "Sistema estavel! Contador resetado para 0 na NVS.");
     }
 
