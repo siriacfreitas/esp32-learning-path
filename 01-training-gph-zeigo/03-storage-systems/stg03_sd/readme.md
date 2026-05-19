@@ -14,13 +14,13 @@ A pilha de software é dividida em três camadas principais:
 
 ---
 
-## 🛠️ Guia Prático de Debug e Diagnóstico
+## Guia Prático de Debug e Diagnóstico
 
 ### 1. Falhas de Hardware & Camada Física
 
 Se o cartão SD **não monta**, execute a seguinte lista de verificação na bancada:
 
-* **Alimentação Elétrica:** O cartão SD opera estritamente em **3.3V**. O uso de módulos regulados para 5V (comuns no ecossistema Arduino) causa superaquecimento do cartão e queima do controlador interno.
+* **Alimentação Elétrica:** O cartão SD opera estritamente em **3.3V**. O uso de módulos regulados para 5V causa superaquecimento do cartão e queima do controlador interno.
 * **Resistores de Pull-up:** É obrigatório o uso de resistores de pull-up externos de **10 kΩ** nas linhas `CMD` e `DAT[0-3]`. Sem esses resistores, o ESP32 não receberá o sinal de *Ready* do periférico, resultando no erro clássico `ESP_ERR_TIMEOUT`.
 * **Integridade do Sinal & Ruído:** Trilhas longas, conexões frouxas ou cabos jumper soltos geram indutância e capacitância parasita no barramento síncrono.
     * *Sintoma:* Erros de verificação de redundância cíclica (`CRC`) intermitentes em runtime.
@@ -49,9 +49,6 @@ Se o hardware está validado, mas a pilha de software retorna códigos de erro n
     fsync(fileno(f));
     fclose(f); // Valida o retorno do commit de hardware
     ```
-
----
-
 ## Estrutura de Uso Recomendada (Failover)
 
 Para implementar a lógica de contingência (Failover do SD Card para a SPIFFS) na tarefa principal (`app_main`), utilize o fluxo defensivo baseado no retorno dos códigos de erro (`esp_err_t`):
