@@ -68,6 +68,7 @@ if (status != ESP_OK) {
         ESP_LOGE("MAIN", "Falha catastrófica: Armazenamento interno também falhou.");
     }
 }
+```
 ## Requisitos de Ambiente
 Framework: ESP-IDF v5.x (ou superior) instalado e configurado.
 Sistema Operacional RTOS: FreeRTOS (nativo da ESP-IDF).
