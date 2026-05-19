@@ -69,6 +69,7 @@ if (status != ESP_OK) {
     }
 }
 ```
+
 ## Requisitos de Ambiente
 Framework: ESP-IDF v5.x (ou superior) instalado e configurado.
 Sistema Operacional RTOS: FreeRTOS (nativo da ESP-IDF).
